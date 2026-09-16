@@ -2,6 +2,8 @@
 
 This is a complete, step-by-step walkthrough for provisioning the core AWS infrastructure for a Flask-based Employee Directory application using the AWS Management Console and CloudFormation templates.
 
+### PDF GUIDE: [CREATE A CLOUDFORMATION STACK FOR YOUR FLASK APP WITH THE CONSOLE.pdf](https://github.com/user-attachments/files/32284416/CREATE.A.CLOUDFORMATION.STACK.FOR.YOUR.FLASK.APP.WITH.THE.CONSOLE.pdf)
+
 ### WATCH VIDEO WALKTHROUGH HERE: https://youtu.be/s5qtAOd_GDc
 
 
