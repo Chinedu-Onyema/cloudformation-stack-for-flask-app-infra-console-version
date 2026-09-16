@@ -8,7 +8,7 @@ This is a complete, step-by-step walkthrough for provisioning the core AWS infra
 ## PREREQUISITES
 An active AWS Account with permissions to manage CloudFormation, EC2, VPCs, IAM, and RDS resources.
 
-Template File: Use the file 6)_application_infrastructure_deployment_mgt.yml in this repo
+Template File: Use the file application_infrastructure_deployment_mgt.yml in this repo
 
 Access to AWS CloudShell or the AWS CLI to query region-specific AMI IDs.
 
