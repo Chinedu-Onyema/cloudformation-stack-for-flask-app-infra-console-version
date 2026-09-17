@@ -14,6 +14,7 @@ Template File: Use the file application_infrastructure_deployment_mgt.yml in thi
 
 Access to AWS CloudShell or the AWS CLI to query region-specific AMI IDs.
 
+
 ## STEP-BY-STEP PROVISONING GUIDE
 
 ### Step 1: Template Upload
@@ -35,6 +36,7 @@ Note: Uploading a template automatically stores it in an AWS-managed CloudFormat
 
 
 ### Step 2: Retrieve Regional AMI ID
+
 Before entering parameters, retrieve the latest Amazon Linux 2023 AMI ID for your target AWS region using AWS CloudShell.
 
 Run the following command in CloudShell (update --region if not using eu-north-1):
@@ -46,6 +48,7 @@ Copy the returned ImageId (e.g., ami-xxxxxxxxxxxxxxxxx) from the output table.
 
 
 ### Step 3: Specify Stack Details & Parameters
+
 Stack Name: Set your preferred identifier (e.g., employee-application-infrastructure).
 
 Parameters Configuration:
@@ -65,6 +68,7 @@ Review parameter mappings against your template specification and click Next.
 
 
 ### Step 4: Configure Stack Options & Failure Behaviors
+
 Under Stack failure options, configure how CloudFormation handles provisioning errors:
 
 Roll back all stack resources (Default): Reverts and deletes all created resources if any single resource fails to deploy. Ensures a clean state without lingering orphaned infrastructure.
@@ -74,6 +78,7 @@ Preserve successfully provisioned resources: Retains healthy components (e.g., V
 
 
 ### Step 5: Review, Capabilities & Deployment
+
 Scroll to the Capabilities section at the bottom of the page.
 
 Select the Acknowledgement checkbox to explicitly grant CloudFormation permission to create custom IAM resources and roles.
@@ -83,6 +88,7 @@ Review all configured parameters on the Review and create page and click Submit.
 
 
 ### Step 6: Monitor Deployment & Verification
+
 Navigate through the stack management tabs to track execution state:
 
 Stack Info: Displays overall deployment status (CREATE_IN_PROGRESS, CREATE_COMPLETE, or ROLLBACK_COMPLETE).
@@ -104,9 +110,10 @@ Open a new browser tab and paste the address to access the live Flask Employee D
 
 
 ## Iterative Updates (Updating Existing Stack)
+
 To deploy new resources or modify configurations on a running stack:
 
-Update your local 6)_application_infrastructure_deployment_mgt.yml definition file.
+Update your local application_infrastructure_deployment_mgt.yml definition file.
 
 In the AWS CloudFormation Console, select your active stack (employee-application-infrastructure).
 
